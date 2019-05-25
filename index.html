@@ -1,0 +1,2924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>国美商城</title>
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" type="text/css" href="./font/iconfont.css">
+</head>
+<body>
+<div class="top_header" id="top_header">
+	<div class="layout top_box">
+		<a href="#">
+			<img src="./images/titleheader.jpg">
+		</a>
+		<a class="close_top_box" href="javascript:void(0)" id="close_top_box">
+			<i></i>
+		</a>
+	</div>
+</div>
+<div class="top_body">
+	<div class="layout top_body_box">
+		<ul class="top_body_L">
+			<li style="margin-right: 12px;" class="active" id="huiyuan"><b><a href="#">国美会员</a><i></i></b>
+			
+			<div class="public_drop_box" style="border-top:none;">
+				<div class="user_name">
+					<i></i>
+					<div>
+						<p class="user_name_login">欢迎来到国美,<a href="#">请登录！</a></p>
+					</div>
+				</div>
+				<div class="user_icon">
+					<p><a href="">会员俱乐部</a>
+					我的<span>特权</span></p>
+					<a href="#" class="user_icon_prev" id="icon_prev"></a>
+					<a href="#" class="user_icon_next" id="icon_next"></a>
+					<div id="icon_lunbo">
+						<ul>
+						<li><a href="#"><i class="iconfont">&#xe652;</i>美豆抽奖</a></li>
+						<li><a href="#"><i class="iconfont">&#xe651;</i>退换货保障</a></li>
+						<li><a href="#"><i class="iconfont">&#xe64f;</i>美豆抽奖</a></li>
+						<li><a href="#"><i class="iconfont">&#xe64c;</i>退换货保障</a></li>
+						<li><a href="#"><i class="iconfont">&#xe649;</i>美豆抽奖</a></li>
+						<li><a href="#"><i class="iconfont">&#xe647;</i>退换货保障</a></li>
+						<li><a href="#"><i class="iconfont">&#xe646;</i>美豆抽奖</a></li>
+						<li><a href="#"><i class="iconfont">&#xe645;</i>退换货保障</a></li>
+						<li><a href="#"><i class="iconfont">&#xe653;</i>美豆抽奖</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			</li>
+			<li class="public_link user_login">
+			<a href="#">登录</a>
+			<a href="#" class="user_register" style="color: #f5004b;">注册有礼<i></i></a>
+
+			</li>
+		</ul>
+
+		<ul class="top_body_R fr">
+			<li class="public_link">
+			<a href="#">我的订单</a>
+			</li>
+			<li id="guomei_home">
+				<b><a href="#">我的国美</a><i></i></b>
+				<div id="drop_down_box" class="public_drop_box" style="border-top:none;"><strong>我的国美，<a rel=""  href="">请登录！</a></strong>
+					<ul id="mygome-order">
+					    <li><a  href="" target="_blank">待处理订单</a><ins id="waitPay"></ins></li>
+					    <li><a  href="" target="_blank">我的收藏</a></li>
+					    <li><a  href="">我的金融</a></li>
+					    <li><a  href="" target="_blank">个人资料</a></li>
+					    <li><a  href="" target="_blank">我的美店</a></li>
+					</ul>
+					<ul id="mygome-coupon">
+					    <li><a  href="" target="_blank">红&nbsp;券</a><ins id="redCoupon">-</ins></li>
+					    <li><a  href="" target="_blank">蓝&nbsp;券</a><ins id="blueCoupon">-</ins></li>
+					    <li><a  href="" target="_blank">店铺券</a><ins id="shopCoupon">-</ins></li>
+					    <li class="none"><a  href=""  target="_blank">购物券</a><ins id="platformCoupon">-</ins></li>
+					</ul>
+					<p>足迹</p>
+					<ul id="mygome-track">
+					    <li></li>
+					    <li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</li>
+			<li id="gome-enterprise"><b><a href="#">企业采购</a><i></i></b>
+				<div class="public-dropdown" style="border-top:none;">
+                    <a class="gome-qrcode" href="" target="_blank"></a>
+                </div>
+			</li>
+			<li id="sever_center"><b><em></em><a href="#">服务中心</a><i></i></b></li>
+			<li><b><a href="#">网站导航</a><i></i></b></li>
+			<li id="hand_phone"><b><em></em><a href="#">手机国美</a><i></i></b></li>
+		</ul>
+	</div>
+</div>
+<!-- 公共头部over -->
+
+<div id="gome-head" class="wbox" >
+    <div id="logo"><a  href="" target="_self">国美</a></div>
+    <div id="slogan"></div>
+
+<div id="topSearch" class="topsearch">
+    <div id="topSearchHover" class="searchbox" >
+        <form id="searchForm" method="get" action="" >
+            <div id="search-type-dropdown">
+                <div class="search-type">
+                    <span class="search-type-selected">商品</span>
+                    <i></i>
+                </div>
+                <ul class="search-type-list" id="search_type_list">
+                    <li class="search-type-item">商品</li>
+                    <li class="search-type-item">店铺</li>
+                    <li class="search-type-item">话题</li>
+                    <li class="search-type-item">圈子</li>
+                </ul>
+            </div>
+            <ul id="keyLabel">
+            <li>佳能相机</li>
+            <li>冰箱</li>
+            <li>手机</li>
+            <li>热水器</li>
+            </ul>
+            <input type="text" id="searchInput" name="question" value=""   alt="">
+            <button type="button" class="search-btn" >搜索</button>
+        </form>
+    <a href="" target="_blank"><div class="voice-search"></div></a></div>
+    <div class="hotkeyword">
+        <a  class="highlight" rel="" target="_blank" href="">国美自营精选</a>
+        <a  rel="" target="_blank" href="">1元投</a>
+        <a  rel="" target="_blank" href="">礼券限时抢</a>
+        <a  rel="" target="_blank" href="">24.9元起</a>
+        <a  rel="" target="_blank" href="">满199减100</a>
+        <a  rel="" target="_blank" href="">vivo X23</a>
+        <a  rel="" target="_blank" href="">5折起</a>
+        <a  rel="" target="_blank" href="">抢iPad</a>
+        <a  href="" target="_blank">商品排行榜</a>
+        <a  href="" target="_blank">热门推荐</a>
+    </div>
+    <div id="searchTips" class="searchtips">
+        
+        <ul id="searchTipsList" class="searchabout clearfix"><li class="related-search related-shop-search">    <a href="javascript:void(0);">        <i></i><span>找“</span><em class="related-keyword"></em><span>”相关店铺</span></a>    </li></ul>
+    <div class="closeSearch" id="closeSearch"><span>关闭</span></div></div>
+
+</div>
+<div class="mygome-side" >
+    <ul class="topmenu clearfix">
+        <li class="shopcartbox"><span class="cartlinkbox"><a  rel="" class="menulink cartlink" href=""><em class="i-cart"><span class="shopnum"><span id="commerceItemQuantityId">0</span><i></i></span></em><span id="hdrcarttext">购物车空了</span><b></b></a></span>
+            <div class="menuhide j-overflowy" id="miniShoppingcartLoadId" carttype="up"><div  id="csEmptyMessage" class="noshop"><a  href="" title="去购物车" style="text-decoration:underline;">购物车</a>                                                中还没有商品，赶紧选购吧！</div></div>
+        </li>
+    </ul>
+</div>
+</div>
+<!-- 搜索框部分over -->
+  <div class="category_box">
+  	<div class="category wbox layout">
+  		<div class="sidecategory fl">
+  			<h2 class="hover">
+  				<a href="#">全部商品分类</a>
+  			</h2>
+  			<div class="lisnav" id="navBox">
+  				<div class="lisbg">
+  					<ul class="lisnav_ul" id="lisnav">
+  						<li class="first edit_mode nav_item"><h3><a href="">手机</a><a href="#">充值</a><a href="#">相机</a><a href="#">智能数码</a></h3></li>
+  						<li class=" edit_mode nav_item"><h3><a href="">手机</a><a href="#">充值</a><a href="#">相机</a><a href="#">智能数码</a></h3></li>
+  						<li class="edit_mode nav_item"><h3><a href="">手机</a><a href="#">充值</a><a href="#">相机</a><a href="#">智能数码</a></h3></li>
+  						<li class=" edit_mode nav_item"><h3><a href="">手机</a><a href="#">充值</a><a href="#">相机</a><a href="#">智能数码</a></h3></li>
+  						<li class=" edit_mode nav_item"><h3><a href="">手机</a><a href="#">充值</a><a href="#">相机</a><a href="#">智能数码</a></h3></li>
+  						<li class=" edit_mode nav_item"><h3><a href="">手机</a><a href="#">充值</a><a href="#">相机</a><a href="#">智能数码</a></h3></li>
+  						<li class=" edit_mode nav_item"><h3><a href="">手机</a><a href="#">充值</a><a href="#">相机</a><a href="#">智能数码</a></h3></li>
+  						<li class=" edit_mode nav_item"><h3><a href="">手机</a><a href="#">充值</a><a href="#">相机</a><a href="#">智能数码</a></h3></li>
+  						<li class=" edit_mode nav_item"><h3><a href="">手机</a><a href="#">充值</a><a href="#">相机</a><a href="#">智能数码</a></h3></li>
+  						<li class=" edit_mode nav_item"><h3><a href="">手机</a><a href="#">充值</a><a href="#">相机</a><a href="#">智能数码</a></h3></li>
+  						<li class=" edit_mode nav_item"><h3><a href="">手机</a><a href="#">充值</a><a href="#">相机</a><a href="#">智能数码</a></h3></li>
+  						<li class=" edit_mode nav_item"><h3><a href="">手机</a><a href="#">充值</a><a href="#">相机</a><a href="#">智能数码</a></h3></li>
+  						<li class=" edit_mode nav_item"><h3><a href="">手机</a><a href="#">充值</a><a href="#">相机</a><a href="#">智能数码</a></h3></li>
+  						<li class=" edit_mode nav_item"><h3><a href="">手机</a><a href="#">充值</a><a href="#">相机</a><a href="#">智能数码</a></h3></li>
+  						<li class="lst edit_mode nav_item"><h3><a href="">手机</a><a href="#">充值</a><a href="#">相机</a><a href="#">智能数码</a></h3></li>
+  					</ul>
+  					<div class="subnav" id="subnav">
+  						<div class="loading1_sync" id="loading1_sync">
+  							<div class="fullcategory">
+  								<div class="fullcategory_left">
+  									<div class="fullcategory_title">
+  										<a href="#">潮3C<i></i></a>
+  										<a href="#">手机<i></i></a>
+  										<a href="#">数码<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  									</div>
+  									<div class="fullcategory_content_box">
+  										<div class="fullcategory_content">
+  											<ul class="fullcategory_list">
+  												<div class="title">手机通讯</div>
+  												<div class="list">
+  													<a href="#">手机</a>
+  													<a href="#">对讲机</a>
+  													<a href="#">iphon</a>
+  													<a href="#">华为</a>
+  													<a href="#">小米</a>
+  													<a href="#">荣耀</a>
+  													<a href="#">三星</a>
+  												</div>
+  											</ul>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="fullcategory_right">
+  									<div class="brand">
+  										<ul class="brand_box">
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  										</ul>
+  									</div>
+  								</div>
+  							</div>
+  							<div class="fullcategory">
+  								<div class="fullcategory_left">
+  									<div class="fullcategory_title">
+  										<a href="#">潮3C<i></i></a>
+  										<a href="#">手机<i></i></a>
+  										<a href="#">数码<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  									</div>
+  									<div class="fullcategory_content_box">
+  										<div class="fullcategory_content">
+  											<ul class="fullcategory_list">
+  												<div class="title">手机通讯</div>
+  												<div class="list">
+  													<a href="#">手机</a>
+  													<a href="#">对讲机</a>
+  													<a href="#">iphon</a>
+  													<a href="#">华为</a>
+  													<a href="#">小米</a>
+  													<a href="#">荣耀</a>
+  													<a href="#">三星</a>
+  												</div>
+  											</ul>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="fullcategory_right">
+  									<div class="brand">
+  										<ul class="brand_box">
+  											<a href="#"><img src="./images/联想.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  										</ul>
+  									</div>
+  								</div>
+  							</div>
+  							<div class="fullcategory">
+  								<div class="fullcategory_left">
+  									<div class="fullcategory_title">
+  										<a href="#">潮3C<i></i></a>
+  										<a href="#">手机<i></i></a>
+  										<a href="#">数码<i></i></a>
+  										<a href="#">数码<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  									</div>
+  									<div class="fullcategory_content_box">
+  										<div class="fullcategory_content">
+  											<ul class="fullcategory_list">
+  												<div class="title">手机通讯</div>
+  												<div class="list">
+  													<a href="#">手机</a>
+  													<a href="#">对讲机</a>
+  													<a href="#">iphon</a>
+  													<a href="#">华为</a>
+  													<a href="#">小米</a>
+  													<a href="#">荣耀</a>
+  													<a href="#">三星</a>
+  												</div>
+  											</ul>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="fullcategory_right">
+  									<div class="brand">
+  										<ul class="brand_box">
+  											<a href="#"><img src="./images/海信.jpeg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  										</ul>
+  									</div>
+  								</div>
+  							</div>
+  							<div class="fullcategory">
+  								<div class="fullcategory_left">
+  									<div class="fullcategory_title">
+  										<a href="#">潮3C<i></i></a>
+  										<a href="#">手机<i></i></a>
+  										<a href="#">手机<i></i></a>
+  										<a href="#">手机<i></i></a>
+  										<a href="#">数码<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  									</div>
+  									<div class="fullcategory_content_box">
+  										<div class="fullcategory_content">
+  											<ul class="fullcategory_list">
+  												<div class="title">手机通讯</div>
+  												<div class="list">
+  													<a href="#">手机</a>
+  													<a href="#">对讲机</a>
+  													<a href="#">iphon</a>
+  													<a href="#">华为</a>
+  													<a href="#">小米</a>
+  													<a href="#">荣耀</a>
+  													<a href="#">三星</a>
+  												</div>
+  											</ul>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="fullcategory_right">
+  									<div class="brand">
+  										<ul class="brand_box">
+  											<a href="#"><img src="./images/海尔.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  										</ul>
+  									</div>
+  								</div>
+  							</div>
+  							<div class="fullcategory">
+  								<div class="fullcategory_left">
+  									<div class="fullcategory_title">
+  										<a href="#">潮3C<i></i></a>
+  										<a href="#">潮3C<i></i></a>
+  										<a href="#">手机<i></i></a>
+  										<a href="#">数码<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  									</div>
+  									<div class="fullcategory_content_box">
+  										<div class="fullcategory_content">
+  											<ul class="fullcategory_list">
+  												<div class="title">手机通讯</div>
+  												<div class="list">
+  													<a href="#">手机</a>
+  													<a href="#">对讲机</a>
+  													<a href="#">iphon</a>
+  													<a href="#">华为</a>
+  													<a href="#">小米</a>
+  													<a href="#">荣耀</a>
+  													<a href="#">三星</a>
+  												</div>
+  											</ul>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="fullcategory_right">
+  									<div class="brand">
+  										<ul class="brand_box">
+  											<a href="#"><img src="./images/厨卫华帝.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  										</ul>
+  									</div>
+  								</div>
+  							</div>
+  							<div class="fullcategory">
+  								<div class="fullcategory_left">
+  									<div class="fullcategory_title">
+  										<a href="#">潮3C<i></i></a>
+  										<a href="#">手机<i></i></a>
+  										<a href="#">数码<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  									</div>
+  									<div class="fullcategory_content_box">
+  										<div class="fullcategory_content">
+  											<ul class="fullcategory_list">
+  												<div class="title">手机通讯</div>
+  												<div class="list">
+  													<a href="#">手机</a>
+  													<a href="#">对讲机</a>
+  													<a href="#">iphon</a>
+  													<a href="#">华为</a>
+  													<a href="#">小米</a>
+  													<a href="#">荣耀</a>
+  													<a href="#">三星</a>
+  												</div>
+  											</ul>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="fullcategory_right">
+  									<div class="brand">
+  										<ul class="brand_box">
+  											<a href="#"><img src="./images/拉菲曼尼.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  										</ul>
+  									</div>
+  								</div>
+  							</div>
+  							<div class="fullcategory">
+  								<div class="fullcategory_left">
+  									<div class="fullcategory_title">
+  										<a href="#">潮3C<i></i></a>
+  										<a href="#">手机<i></i></a>
+  										<a href="#">数码<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  									</div>
+  									<div class="fullcategory_content_box">
+  										<div class="fullcategory_content">
+  											<ul class="fullcategory_list">
+  												<div class="title">手机通讯</div>
+  												<div class="list">
+  													<a href="#">手机</a>
+  													<a href="#">对讲机</a>
+  													<a href="#">iphon</a>
+  													<a href="#">华为</a>
+  													<a href="#">小米</a>
+  													<a href="#">荣耀</a>
+  													<a href="#">三星</a>
+  												</div>
+  											</ul>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="fullcategory_right">
+  									<div class="brand">
+  										<ul class="brand_box">
+  											<a href="#"><img src="./images/联想.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  										</ul>
+  									</div>
+  								</div>
+  							</div>
+  							<div class="fullcategory">
+  								<div class="fullcategory_left">
+  									<div class="fullcategory_title">
+  										<a href="#">潮3C<i></i></a>
+  										<a href="#">手机<i></i></a>
+  										<a href="#">数码<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  									</div>
+  									<div class="fullcategory_content_box">
+  										<div class="fullcategory_content">
+  											<ul class="fullcategory_list">
+  												<div class="title">手机通讯</div>
+  												<div class="list">
+  													<a href="#">手机</a>
+  													<a href="#">对讲机</a>
+  													<a href="#">iphon</a>
+  													<a href="#">华为</a>
+  													<a href="#">小米</a>
+  													<a href="#">荣耀</a>
+  													<a href="#">三星</a>
+  												</div>
+  											</ul>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="fullcategory_right">
+  									<div class="brand">
+  										<ul class="brand_box">
+  											<a href="#"><img src="./images/拉菲曼尼.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  										</ul>
+  									</div>
+  								</div>
+  							</div>
+  							<div class="fullcategory">
+  								<div class="fullcategory_left">
+  									<div class="fullcategory_title">
+  										<a href="#">潮3C<i></i></a>
+  										<a href="#">手机<i></i></a>
+  										<a href="#">数码<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  									</div>
+  									<div class="fullcategory_content_box">
+  										<div class="fullcategory_content">
+  											<ul class="fullcategory_list">
+  												<div class="title">手机通讯</div>
+  												<div class="list">
+  													<a href="#">手机</a>
+  													<a href="#">对讲机</a>
+  													<a href="#">iphon</a>
+  													<a href="#">华为</a>
+  													<a href="#">小米</a>
+  													<a href="#">荣耀</a>
+  													<a href="#">三星</a>
+  												</div>
+  											</ul>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="fullcategory_right">
+  									<div class="brand">
+  										<ul class="brand_box">
+  											<a href="#"><img src="./images/联想.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  										</ul>
+  									</div>
+  								</div>
+  							</div>
+  							<div class="fullcategory">
+  								<div class="fullcategory_left">
+  									<div class="fullcategory_title">
+  										<a href="#">潮3C<i></i></a>
+  										<a href="#">手机<i></i></a>
+  										<a href="#">数码<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  									</div>
+  									<div class="fullcategory_content_box">
+  										<div class="fullcategory_content">
+  											<ul class="fullcategory_list">
+  												<div class="title">手机通讯</div>
+  												<div class="list">
+  													<a href="#">手机</a>
+  													<a href="#">对讲机</a>
+  													<a href="#">iphon</a>
+  													<a href="#">华为</a>
+  													<a href="#">小米</a>
+  													<a href="#">荣耀</a>
+  													<a href="#">三星</a>
+  												</div>
+  											</ul>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="fullcategory_right">
+  									<div class="brand">
+  										<ul class="brand_box">
+  											<a href="#"><img src="./images/海尔.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  										</ul>
+  									</div>
+  								</div>
+  							</div>
+  							<div class="fullcategory">
+  								<div class="fullcategory_left">
+  									<div class="fullcategory_title">
+  										<a href="#">潮3C<i></i></a>
+  										<a href="#">手机<i></i></a>
+  										<a href="#">数码<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  									</div>
+  									<div class="fullcategory_content_box">
+  										<div class="fullcategory_content">
+  											<ul class="fullcategory_list">
+  												<div class="title">手机通讯</div>
+  												<div class="list">
+  													<a href="#">手机</a>
+  													<a href="#">对讲机</a>
+  													<a href="#">iphon</a>
+  													<a href="#">华为</a>
+  													<a href="#">小米</a>
+  													<a href="#">荣耀</a>
+  													<a href="#">三星</a>
+  												</div>
+  											</ul>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="fullcategory_right">
+  									<div class="brand">
+  										<ul class="brand_box">
+  											<a href="#"><img src="./images/联想.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  										</ul>
+  									</div>
+  								</div>
+  							</div>
+  							<div class="fullcategory">
+  								<div class="fullcategory_left">
+  									<div class="fullcategory_title">
+  										<a href="#">潮3C<i></i></a>
+  										<a href="#">手机<i></i></a>
+  										<a href="#">数码<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  									</div>
+  									<div class="fullcategory_content_box">
+  										<div class="fullcategory_content">
+  											<ul class="fullcategory_list">
+
+  												<div class="title">手机通讯</div>
+  												<div class="list">
+  													<a href="#">手机</a>
+  													<a href="#">对讲机</a>
+  													<a href="#">iphon</a>
+  													<a href="#">华为</a>
+  													<a href="#">小米</a>
+  													<a href="#">荣耀</a>
+  													<a href="#">三星</a>
+  												</div>
+  											</ul>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="fullcategory_right">
+  									<div class="brand">
+  										<ul class="brand_box">
+  											<a href="#"><img src="./images/厨卫华帝.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  										</ul>
+  									</div>
+  								</div>
+  							</div>
+  							<div class="fullcategory">
+  								<div class="fullcategory_left">
+  									<div class="fullcategory_title">
+  										<a href="#">潮3C<i></i></a>
+  										<a href="#">手机<i></i></a>
+  										<a href="#">数码<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  									</div>
+  									<div class="fullcategory_content_box">
+  										<div class="fullcategory_content">
+  											<ul class="fullcategory_list">
+  												<div class="title">手机通讯</div>
+  												<div class="list">
+  													<a href="#">手机</a>
+  													<a href="#">对讲机</a>
+  													<a href="#">iphon</a>
+  													<a href="#">华为</a>
+  													<a href="#">小米</a>
+  													<a href="#">荣耀</a>
+  													<a href="#">三星</a>
+  												</div>
+  											</ul>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="fullcategory_right">
+  									<div class="brand">
+  										<ul class="brand_box">
+  											<a href="#"><img src="./images/联想.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  										</ul>
+  									</div>
+  								</div>
+  							</div>
+  							<div class="fullcategory">
+  								<div class="fullcategory_left">
+  									<div class="fullcategory_title">
+  										<a href="#">潮3C<i></i></a>
+  										<a href="#">手机<i></i></a>
+  										<a href="#">数码<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  									</div>
+  									<div class="fullcategory_content_box">
+  										<div class="fullcategory_content">
+  											<ul class="fullcategory_list">
+  												<div class="title">手机通讯</div>
+  												<div class="list">
+  													<a href="#">手机</a>
+  													<a href="#">对讲机</a>
+  													<a href="#">iphon</a>
+  													<a href="#">华为</a>
+  													<a href="#">小米</a>
+  													<a href="#">荣耀</a>
+  													<a href="#">三星</a>
+  												</div>
+  											</ul>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="fullcategory_right">
+  									<div class="brand">
+  										<ul class="brand_box">
+  											<a href="#"><img src="./images/海尔.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  										</ul>
+  									</div>
+  								</div>
+  							</div>
+  							<div class="fullcategory">
+  								<div class="fullcategory_left">
+  									<div class="fullcategory_title">
+  										<a href="#">潮3C<i></i></a>
+  										<a href="#">手机<i></i></a>
+  										<a href="#">数码<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  										<a href="#">以旧换新<i></i></a>
+  									</div>
+  									<div class="fullcategory_content_box">
+  										<div class="fullcategory_content">
+  											<ul class="fullcategory_list">
+  												<div class="title">手机通讯</div>
+  												<div class="list">
+  													<a href="#">手机</a>
+  													<a href="#">对讲机</a>
+  													<a href="#">iphon</a>
+  													<a href="#">华为</a>
+  													<a href="#">小米</a>
+  													<a href="#">荣耀</a>
+  													<a href="#">三星</a>
+  												</div>
+  											</ul>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="fullcategory_right">
+  									<div class="brand">
+  										<ul class="brand_box">
+  											<a href="#"><img src="./images/联想.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  											<a href="#"><img src="./images/华为-手机.jpg"></a>
+  										</ul>
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<ul class="mainnav">
+  			<li class="cur"><a href="#"><span>圈子</span></a></li>
+  			<li><a href="#"><span>真划算</span></a><span class="tag_line"></span></li>
+  			<li><a href="#"><span>服装城</span></a></li>
+  			<li><a href="#"><span>超市</span></a></li>
+  			<li><a href="#"><span>电器城</span></a></li>
+  			<li><a href="#"><span>国美电器</span></a><span class="tag_hot"></span></li>
+  			<li><a href="#"><span>汽车</span></a></li>
+  			<li><a href="#"><span>家居家装</span><span class="tag_line"></span></a></li>
+  			<li><a href="#"><span>智能</span></a></li>
+  			<li><a href="#"><span>管家</span></a></li>
+  			<li><a href="#"><span>金融</span></a></li>
+  		</ul>
+  		<div class="hdrsideRoll" id="hdrsideRoll">
+  			<div class="adnavside" id="adnavside">
+  				<ul class="hd_clickscroll" >
+  					<li><a href="#"><img src="./images/hdscroll3.png" style="width: 170px;height: 40px;"></a></li>
+  					<li><a href="#"><img src="./images/hdscroll1.png" style="width: 170px;height: 40px;"></a></li>
+  					<li><a href="#"><img src="./images/hdscroll2.png" style="width: 170px;height: 40px;"></a></li>
+  					<li><a href="#"><img src="./images/hdscroll3.png" style="width: 170px;height: 40px;"></a></li>
+  					<li><a href="#"><img src="./images/hdscroll1.png" style="width: 170px;height: 40px;"></a></li>
+  					<!-- <li><a href="#"><img src="../images/"></a></li>
+  					<li><a href="#"><img src="../images/"></a></li>
+  					<li><a href="#"><img src="../images/"></a></li> -->
+  				</ul>
+  			</div>
+  			<div class="hdrsRollbtn">
+  				<a href="#" class="hdr_btn_up" id="hdr_btn_up"><i></i></a>
+  				<a href="#" class="hdr_btn_down" id="hdr_btn_down"><i></i></a>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+<div class="gm_main" id="gm_main">
+	<div class="focus">
+		<div class="focus_img_bg">
+			<div class="focus_img_l">
+				<a href="" class="edit_mode">
+					<img src="./images/main左侧bg.png">
+				</a>
+				<div class="focuslayer">
+					<a href="">
+						<img class="focuslayer_img" src="./images/开学爆到.png">
+					</a>
+					<span class="layer_btn index_pabs">x</span>
+				</div>
+			</div>
+		</div>
+		<div>
+			<ul class="focus_box" id="focus_box">
+				<li style="background: rgb(24, 199, 220);">
+					<a>
+						<img src="./images/超市囤货节.jpg">
+					</a>
+					<span class="promotion_tags">
+						<img src="./images/grey.gif">
+					</span>
+				</li>
+				<li style="background: rgb(166, 238, 253);">
+					<a>
+						<img src="./images/智能数码.jpg">
+					</a>
+					<span class="promotion_tags">
+						<img src="./images/grey.gif">
+					</span>
+				</li>
+				<li style="background: rgb(78, 115, 232);">
+					<a>
+						<img src="./images/空调嗨购.jpg">
+					</a>
+					<span class="promotion_tags">
+						<img src="./images/grey.gif">
+					</span>
+				</li>
+				<li style="background: rgb(29, 109, 255);">
+					<a>
+						<img src="./images/开学季.jpg">
+					</a>
+					<span class="promotion_tags">
+						<img src="./images/grey.gif">
+					</span>
+				</li>
+				<li style="background: rgb(216, 201, 178);">
+					<a>
+						<img src="./images/居家攻心季.jpg">
+					</a>
+					<span class="promotion_tags">
+						<img src="./images/grey.gif">
+					</span>
+				</li>
+			</ul>
+			<ol class="nav edit_mode" id="nav">
+				<li class="cur"><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+			</ol>
+			<div class="slider_extra">
+				<div class="btn pre" id="pre">
+					<span class="btnbg"></span>
+					<p class="go_l" id="go_l"></p>
+				</div>
+				<div class="btn nex" id="nex">
+					<span class="btnbg"></span>
+					<p class="go_r" id="go_r"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="layout wbox">
+		<div class="gm_sever_wrap" id="gm_sever_wrap">
+			<span class="guan"></span>
+			<div class="gm_sever_bg"></div>
+			<div class="gm_sever gm_kuaixun4">
+				<div class="gm_kuaixun edit_mode">
+					<div class="gome_news">
+						<h2 class="gome_news_title">快讯</h2>
+						<a href="#">
+							更多
+							<span></span>
+						</a>
+					</div>
+					<div class="gome_news_content">
+						<span><a href="#" class="gome_news_sort edit_mode">特惠</a><a href="#" class="gome_news_text">笔记本领劵立省600元</a></span>
+						<span><a href="#" class="gome_news_sort edit_mode">特惠</a><a href="#" class="gome_news_text">笔记本领劵立省600元</a></span>
+						<span><a href="#" class="gome_news_sort edit_mode">特惠</a><a href="#" class="gome_news_text">笔记本领劵立省600元</a></span>
+						<span><a href="#" class="gome_news_sort edit_mode">特惠</a><a href="#" class="gome_news_text">笔记本领劵立省600元</a></span>
+					</div>
+				</div>
+				<div class="icon_server_box edit_mode">
+					<div class="icon_box" id="icon_box">
+						<ul class="icon_server" id="icon_server">
+							<li class="icon_server_li_bottom edit_mode" >
+								<a href="#" class="icon_server_a">
+									<i class="gm_icon">&#xe613;</i>
+									<i class="icon_server_li_title">充话费</i>
+									<i class="icon_server_li_triangle"></i>
+								</a>
+							</li>
+							<li class="icon_server_li_bottom edit_mode">
+								<a href="#" class="icon_server_a">
+									<i class="gm_icon">&#xe73d;</i>
+									<i class="icon_server_li_title">充流量</i>
+									<i class="icon_server_li_triangle"></i>
+								</a>
+							</li>
+							<li class="icon_server_li_bottom edit_mode">
+								<a href="#" class="icon_server_a">
+									<i class="gm_icon">&#xe689;</i>
+									<i class="icon_server_li_title">游戏</i>
+									<i class="icon_server_li_triangle"></i>
+								</a>
+							</li>
+							<li class="edit_mode">
+								<a href="#" class="icon_server_a">
+									<i class="gm_icon">&#xe669;</i>
+									<i class="icon_server_li_title">美盈宝</i>
+									
+								</a>
+							</li>
+							<li class="edit_mode">
+								<a href="#" class="icon_server_a">
+									<i class="gm_icon">&#xe615;</i>
+									<i class="icon_server_li_title">转让</i>
+									
+								</a>
+							</li>
+							<li class="edit_mode">
+								<a href="#" class="icon_server_a">
+									<i class="gm_icon">&#xe659;</i>
+									<i class="icon_server_li_title">找服务</i>
+									
+								</a>
+							</li>
+							<li class="edit_mode">
+								<a href="#" class="icon_server_a">
+									<i class="gm_icon">&#xe603;</i>
+									<i class="icon_server_li_title">金融</i>
+									
+								</a>
+							</li>
+							<li class="edit_mode">
+								<a href="#" class="icon_server_a">
+									<i class="gm_icon">&#xe60a;</i>
+									<i class="icon_server_li_title">定期</i>
+									
+								</a>
+							</li>
+							<li class="edit_mode">
+								<a href="#" class="icon_server_a">
+									<i class="gm_icon">&#xe654;</i>
+									<i class="icon_server_li_title">帮助</i>
+									
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="icon_tab_wrap" id="icon_tab_wrap">
+						<span class="ser_cur"></span>
+						<ul class="icon_tab_content_ul">
+							<li>
+									<div class="tupiandf">
+										<div class="nav_phone">
+											<div class="inp_dtl cf">
+												<label class="lab">号码</label>
+												<input class="value" value="请输入充值号码"></input>
+												<span class="msg_info"></span>
+												
+											</div>
+											<div class="inp_dtl cf">
+												<div class="sel_gro">
+													<label class="lab">面值</label>
+													<input class="val_sel"></input>
+													<ul class="sel_ls">
+														<li class="sel_it">30元</li>
+														<li class="sel_it">50元</li>
+														<li class="sel_it">60元</li>
+														<li class="sel_it">80元</li>
+														<li class="sel_it">90元</li>
+													</ul>
+													<a href="" class="sel_do"></a>
+												</div>
+												
+											</div>
+											<div class="inp_dtl cf">
+												<label class="lab_nor">售价</label>
+												<span class="money">¥99-100</span>
+												
+											</div>
+											<div class="foot_dtl cf">
+												<a href="" class="fl btn25">立即充值</a>
+												<a href="" class="ad">
+													<em>
+														<a href="">充话费、充流量天天低价</a>
+													</em>
+												</a>
+												
+											</div>
+										</div>
+									</div>
+								
+							</li>
+							<li>
+								
+									<div class="tupiandf">
+										<div class="nav_phone">
+											<div class="inp_dtl cf">
+												<label class="lab">号码</label>
+												<input class="value" value="请输入充值号码"></input>
+												<span class="msg_info"></span>
+											</div>
+											<div class="inp_dtl cf">
+												<div class="sel_gro">
+													<label class="lab">面值</label>
+													<input class="val_sel"></input>
+													<ul class="sel_ls">
+														<li class="sel_it">30元</li>
+														<li class="sel_it">50元</li>
+														<li class="sel_it">60元</li>
+														<li class="sel_it">80元</li>
+														<li class="sel_it">90元</li>
+													</ul>
+													<a href="" class="sel_do"></a>
+												</div>
+											</div>
+											<div class="inp_dtl cf">
+												<label class="lab_nor">售价</label>
+												<span class="money">¥99-100</span>
+											</div>
+											<div class="foot_dtl cf">
+												<a href="" class="fl btn25">立即充值</a>
+												<a href="" class="ad">
+													<em>
+														<a href="">充话费、充流量天天低价</a>
+													</em>
+												</a>
+											</div>
+										</div>
+									</div>
+								
+							</li>
+							<li>
+								
+									<div class="tupiandf">
+										<div class="nav_phone">
+											<div class="inp_dtl cf">
+												<label class="lab">号码</label>
+												<input class="value" value="请输入充值号码"></input>
+												<span class="msg_info"></span>
+											</div>
+											<div class="inp_dtl cf">
+												<div class="sel_gro">
+													<label class="lab">面值</label>
+													<input class="val_sel"></input>
+													<ul class="sel_ls">
+														<li class="sel_it">30元</li>
+														<li class="sel_it">50元</li>
+														<li class="sel_it">60元</li>
+														<li class="sel_it">80元</li>
+														<li class="sel_it">90元</li>
+													</ul>
+													<a href="" class="sel_do"></a>
+												</div>
+											</div>
+											<div class="inp_dtl cf">
+												<label class="lab_nor">售价</label>
+												<span class="money">¥99-100</span>
+											</div>
+											<div class="foot_dtl cf">
+												<a href="" class="fl btn25">立即充值</a>
+												<a href="" class="ad">
+													<em>
+														<a href="">充话费、充流量天天低价</a>
+													</em>
+												</a>
+											</div>
+										</div>
+									</div>
+								
+							</li>
+						</ul>
+						<a href="javascript:void(0)" class="close_icon">
+							<i></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- main部分over -->
+<div class="countdown edit-mode" style="display: block;"  >
+            <div class="wbox countdown_main">
+                <div class="count_l">
+                    <div class="countdown_l_t">
+                        <div class="time_box"><i class="defintext">本场次剩余时间</i><i class="timego"><em class="num">03</em>:<em class="num">53</em>:<em class="num">18</em></i></div>
+                        <div class="click_box">
+                                <img src="./images/美日必抢.jpeg" width="40" height="40">
+                                <h3>美日必抢</h3>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="countdown_l_b">
+                         <div class="countdown_lists">  <div class="list"> 
+                         <div class="lay first">  
+	                          <div class="list_li 0"> 
+	                          <a href="" target="_blank" title="利仁（Liven）KL-D3600多功能可拆洗家用不粘电烧烤炉室内电烤盘烤肉机" > <img class="lazyloading" src="./images/烤肉盘.jpg" alt="利仁（Liven）KL-D3600多功能可拆洗家用不粘电烧烤炉室内电烤盘烤肉机" title="利仁（Liven）KL-D3600多功能可拆洗家用不粘电烧烤炉室内电烤盘烤肉机" width="120" height="120"> <div class="p_price"> <span>¥</span><i>239.00</i>  <i class="del">¥259.00</i>  </div> <p class="p_name">利仁（Liven）KL-D3600多功能可拆洗家用不粘电烧烤炉室内电烤盘烤肉机</p> </a> 
+	                          </div> 
+                             <div class="list_li 1"> 
+                             <a href="" target="_blank" title="家时光 简易多层鞋架家用防尘多功能创意鞋柜学生寝室宿舍简约现代经济型(雨果的烦恼)" > <img class="lazyloading" src="./images/防尘工具.jpg" alt="家时光 简易多层鞋架家用防尘多功能创意鞋柜学生寝室宿舍简约现代经济型(雨果的烦恼)" title="家时光 简易多层鞋架家用防尘多功能创意鞋柜学生寝室宿舍简约现代经济型(雨果的烦恼)" width="120" height="120"> <div class="p_price"> <span>¥</span><i>35.00</i>  <i class="del">¥59.00</i>  </div> <p class="p_name">家时光 简易多层鞋架家用防尘多功能创意鞋柜学生寝室宿舍简约现代经济型(雨果的烦恼)</p> 
+                             </a>
+                              </div>  
+                               <div class="list_li 2"> 
+                               <a href="" target="_blank" title="惠普(HP)Laptop 15-bw502AX 15.6英寸笔记本电脑 A9-9420  8G内存 500G硬盘 R5 M520 2G独显 Win10" > <img class="lazyloading" src="./images/惠普.jpg" alt="惠普(HP)Laptop 15-bw502AX 15.6英寸笔记本电脑 A9-9420  8G内存 500G硬盘 R5 M520 2G独显 Win10" title="惠普(HP)Laptop 15-bw502AX 15.6英寸笔记本电脑 A9-9420  8G内存 500G硬盘 R5 M520 2G独显 Win10" width="120" height="120"> <div class="p_price"> <span>¥</span><i>2999.00</i>  </div> <p class="p_name">惠普(HP)Laptop 15-bw502AX 15.6英寸笔记本电脑 A9-9420  8G内存 500G硬盘 R5 M520 2G独显 Win10</p> 
+                               </a> 
+                               </div>    
+                               <div class="list_li 3"> 
+                               <a href="" target="_blank" title="阿迪达斯男士劲透控油净爽肌能水100g"> <img class="lazyloading" src="./images/爽肌水.jpg" alt="阿迪达斯男士劲透控油净爽肌能水100g" title="阿迪达斯男士劲透控油净爽肌能水100g" width="120" height="120"> <div class="p_price"> <span>¥</span><i>22.80</i>  <i class="del">¥42.90</i>  </div> <p class="p_name">阿迪达斯男士劲透控油净爽肌能水100g</p> 
+                               </a> 
+                               </div>           
+                          </div>  
+                          		<div class="lay two">           
+                          		<div class="list_li 4"> 
+                          		<a href="" target="_blank" title="百雀羚 水嫩倍现滋润保湿套装 （洁面乳+水+乳液+精华霜+眼部精华）" > <img class="lazyloading" src="./images/百雀羚.jpg" alt="百雀羚 水嫩倍现滋润保湿套装 （洁面乳+水+乳液+精华霜+眼部精华）" title="百雀羚 水嫩倍现滋润保湿套装 （洁面乳+水+乳液+精华霜+眼部精华）" width="120" height="120"> <div class="p_price"> <span>¥</span><i>209.00</i>  <i class="del">¥215.00</i>  </div> <p class="p_name">百雀羚 水嫩倍现滋润保湿套装 （洁面乳+水+乳液+精华霜+眼部精华）</p> 
+                          		</a> 
+                          		</div>    
+                          		<div class="list_li 5"> 
+                          		<a href="" target="_blank" title="美菱(MeiLing) BCD-362WPB 362升 法式多门 冰箱 风冷 无霜 雅绸粉" > <img class="lazyloading" src="./images/美菱.jpg" alt="美菱(MeiLing) BCD-362WPB 362升 法式多门 冰箱 风冷 无霜 雅绸粉" title="美菱(MeiLing) BCD-362WPB 362升 法式多门 冰箱 风冷 无霜 雅绸粉" width="120" height="120"> <div class="p_price"> <span>¥</span><i>3799.00</i>  <i class="del">¥3999.00</i>  </div> <p class="p_name">美菱(MeiLing) BCD-362WPB 362升 法式多门 冰箱 风冷 无霜 雅绸粉</p> 
+                          		</a> 
+                          		</div>    
+                          		<div class="list_li 6"> 
+                          		<a href="" target="_blank" title="蜗家卧室铁艺金属衣帽架 落地时尚衣服架 挂衣架03y(白色 03Y)" > <img class="lazyloading" src="./images/衣架.jpg" alt="蜗家卧室铁艺金属衣帽架 落地时尚衣服架 挂衣架03y(白色 03Y)" title="蜗家卧室铁艺金属衣帽架 落地时尚衣服架 挂衣架03y(白色 03Y)" width="120" height="120"> <div class="p_price"> <span>¥</span><i>19.90</i>  <i class="del">¥25.00</i>  </div> <p class="p_name">蜗家卧室铁艺金属衣帽架 落地时尚衣服架 挂衣架03y(白色 03Y)</p> 
+                          		</a> 
+                          		</div>    
+                          		<div class="list_li 7"> 
+                          		<a href="" target="_blank" title="自然堂活泉矿物爽肤水142ml （混合性及油性肤质适用）" > <img class="lazyloading" src="./images/自然堂.jpg" alt="自然堂活泉矿物爽肤水142ml （混合性及油性肤质适用）" title="自然堂活泉矿物爽肤水142ml （混合性及油性肤质适用）" width="120" height="120"> <div class="p_price"> <span>¥</span><i>62.00</i>  <i class="del">¥66.00</i>  </div> <p class="p_name">自然堂活泉矿物爽肤水142ml （混合性及油性肤质适用）</p> </a> 
+                          		</div>   
+                          	</div>  
+                          </div> 
+                        </div>
+                    </div>
+                    <div class="countdown_btn index_pabs" >
+                        <div class="j_btn prebtn"  ><span class="btnbg"></span><p class="go_icon btn_l"></p></div>
+                        <div class="j_btn nexbtn"  ><span class="btnbg"></span><p class="go_icon btn_r"></p></div>
+                    </div>
+                </div>
+                <div class="count_r edit-mode"   style="background:url() no-repeat">
+                        <a href="" target="_blank" title="秒杀" data-code="1000071645">
+                            <img class="lazyloading" src="./images/夏季秋末.jpg" title="" width="240" height="252">
+                        </a>
+                </div>
+            </div>
+        </div>
+        <!-- 美日必抢 -->
+<div class="gm_feature edit-mode" style="background:#fff;" >
+    <div class="f_m wbox layout">
+            <div class="f_m_l">
+                <div class="gm_title">
+                    <h2>淘 · 实惠</h2><span>BARGAINS</span>
+                </div>
+                    <div class="f_inner">
+                                <a class="edit-mode" href=""  target="_blank"  >
+                                    <img class="lazyloading special" src="./images/玩转开学季.jpg"   alt="今日特卖" title="" width="219" height="419">
+                                </a>
+                                <a class="edit-mode line_dash" href=""  target="_blank"  >
+                                    <img class="lazyloading img_w199" src="./images/晴雨伞.jpg"   alt="国美抢购" title="" width="199" height="209">
+                                </a>
+                           
+                            <div class="pool edit-mode" >
+                                    <a href=""  target="_blank"><img class="lazyloading img_w199" src="./images/米花糖.jpg"  alt="团购" title="" width="199" height="209"></a>
+                            </div>
+                    </div>
+            </div>
+            <div class="f_m_c">
+            <div class="gm_title">
+                <h2>购 · 新潮</h2><span>FASHION</span>
+            </div>
+            <div class="f_inner">
+                            <a class="edit-mode w195" href=""  target="_blank" >
+                                <img class="lazyloading special ml12" src="./images/新品抢先.jpg"   alt="新品抢先" title="" width="219" height="419"></a>
+                            <a class="line_dash edit-mode" href=""  target="_blank"  >
+                                <img class="lazyloading img_w199 ml5" src="./images/智享生活.jpg"  alt="智享生活" title="" width="199" height="209"></a>
+                       
+                        <div class="pool edit-mode" >
+                                <a href=""  target="_blank"><img class="lazyloading img_w199 ml5" src="./images/潮3C.jpg"  alt="潮3C" title="" width="199" height="209"></a>
+                        </div>
+                </div>
+            </div>
+            <div class="f_m_r">
+            <div class="gm_title">
+                <h2>逛 · 品牌</h2><span>BRANDS</span>
+            </div>
+                <div class="f_inner">
+                    <div class="f_inner_l edit-mode" mo >
+                                <a class="line_dash" href=""  target="_blank"><img class="lazyloading ml12" src="./images/品牌街.png"  alt="品牌街" title="" width="219" height="209"></a>
+                                <a class="line_dash" href=""  target="_blank"><img class="lazyloading ml12" src="./images/国美超市.jpg"  alt="国美超市" title="" width="219" height="209"></a>
+                    </div>
+                    <div class="f_brands">
+                        <div class="f_b_inner edit-mode">
+                                    <a href=""  target="_blank" title="小米Max3大屏新机">
+                                        <img src="./images/小米.jpg"  alt="小米Max3大屏新机" width="100" height="30"></a>
+                                    <a href=""  target="_blank" title="智慧大屏电视">
+                                        <img src="./images/海信.jpg" n  alt="智慧大屏电视" width="100" height="30"></a>
+                                    <a href=""  target="_blank" title="轻松畅跑">
+                                        <img src="./images/adidas.jpg"  alt="轻松畅跑" width="100" height="30"></a>
+                                    <a href=""  target="_blank" title="新机热卖">
+                                        <img src="./images/三星.jpg"  alt="新机热卖" width="100" height="30"></a>
+                                    <a href="" e target="_blank" title="嗨购焕新机">
+                                        <img src="./images/huawei.jpg"  alt="嗨购焕新机" width="100" height="30"></a>
+                                    <a href=""  target="_blank" title="保护脊椎的床垫">
+                                        <img src="./images/littleswan.jpg"  alt="保护脊椎的床垫" width="100" height="30"></a>
+                                    <a href=""  target="_blank" title="惠享生活">
+                                        <img src="./images/喜临门.jpg"  alt="惠享生活" width="100" height="30"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<!-- feature部分over -->
+<div class="youhui layout" style="margin-top: 20px;">
+	<img src="./images/优惠券_03.jpg">
+</div>
+<!-- 优惠券部分over -->
+<div class="gm_finance wbox edit-mode"  >
+    <div class="gm_title"><h2>金融</h2><span>FINANCE</span></div>
+    <div class="f_c">
+        <div class="f_m_l edit-mode" >
+                <b class="finance_entrance"><a href="" target="_blank">金融频道</a><span></span></b>
+                <a href=""  target="_blank"><img class="lazyloading" src="./images/金融频道.jpeg" alt="主活动" title="" width="420" height="230"></a>
+        </div>
+        <div class="f_m_r edit-mode"  >
+            <ul>
+                        <a href="" class="w194" target="_blank"><img class="lazyloading" src="./images/活期理财.jpg"  alt="美盈宝" title="" width="194" height="228"></a>
+                        <a href=""  target="_blank"><img class="lazyloading" src="./images/风险揭示.jpg"   alt="风险揭示" title="" width="194" height="228"></a>
+                        <a href=""  target="_blank"><img class="lazyloading" src="./images/转让理财.jpg"  alt="转让理财" title="" width="194" height="228"></a>
+                        <a href=""  target="_blank"><img class="lazyloading" src="./images/风险测评.jpg"   alt="风险测评" title="" width="194" height="228"></a>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 金融部分over -->
+<div class="wbox gm_guess" style="display: block;">
+    <div class="gm_title">
+        <h2>猜你喜欢</h2>
+        <span>YOU MAY LIKE</span>
+        <div class="change_btn">
+            <a class="pre" id="ch_pre" href="javascript:void"></a>
+            <a class="nex" id="ch_nex" href="javascript:void"></a>
+        </div>
+    </div>
+    <div class="guess_main" id="guess_main">
+        <div id="j-imgload-recomm">
+        <ul style="display: block;opacity: 1;">
+        <li  >
+        <a rel="nofollow" target="_blank" title="OPPOA3手机壳镜面边框后盖  oppo a3保护套全包边防摔硬外壳 A3手机套简约男女款保护壳(镜面版-雪花银)" href=""><img width="120" height="120" alt="OPPOA3手机壳镜面边框后盖  oppo a3保护套全包边防摔硬外壳 A3手机套简约男女款保护壳(镜面版-雪花银)" src="./images/九阳机.jpg" ><p class="guess_title">OPPOA3手机壳镜面边框后盖  oppo a3保护套全包边防摔硬外壳 A3手机套简约男女款保护壳(镜面版-雪花银)</p><p class="guess_price"><span class="yuan">¥</span>29.00</p>
+        </a>
+        </li>
+        <li ><a rel="nofollow" target="_blank" title="娇兰佳人植物日记雪精萃水合新肌四件套(四件套)" href=""><img width="120" height="120" alt="娇兰佳人植物日记雪精萃水合新肌四件套(四件套)" src="./images/多芬.jpg" ><p class="guess_title">娇兰佳人植物日记雪精萃水合新肌四件套(四件套)</p><p class="guess_price"><span class="yuan">¥</span>169.00</p></a>
+        </li>
+        <li ><a rel="nofollow" target="_blank" title="象印进口儿童保温杯SC-MC60学生宝宝保温壶卡通创意儿童水壶600ml(黄色YZ)" href=""><img width="120" height="120" alt="象印进口儿童保温杯SC-MC60学生宝宝保温壶卡通创意儿童水壶600ml(黄色YZ)" src="./images/妙氏.jpg"><p class="guess_title">MC60学生宝宝保温壶卡通创意儿童水壶600ml(黄色YZ)</p><p class="guess_price"><span class="yuan">¥</span>259.00</p></a>
+        </li>
+        <li><a rel="nofollow" target="_blank" title="十月结晶孕妇产褥垫产妇护理床垫产后一次性成人护理垫月经垫8片*2包(白色 版本)" href=""><img width="120" height="120" alt="十月结晶孕妇产褥垫产妇护理床垫产后一次性成人护理垫月经垫8片*2包(白色 版本)" src="./images/小米笔记本.jpg" ><p class="guess_title">十月结晶孕妇产褥垫产妇护理床垫产后一次性成人护理垫月经垫8片*2包(白色 版本)</p><p class="guess_price"><span class="yuan">¥</span>45.00</p></a>
+        </li>
+        <li  ><a rel="nofollow" target="_blank" title="佰伦世家睡衣女夏季短袖套装女士睡衣针织棉短裤韩版卡通休闲家居服(2F639 XXL码)" href=""><img width="120" height="120" alt="佰伦世家睡衣女夏季短袖套装女士睡衣针织棉短裤韩版卡通休闲家居服(2F639 XXL码)" src="./images/微星.jpg" ><p class="guess_title">佰伦世家睡衣女夏季短袖套装女士睡衣针织棉短裤韩版卡通休闲家居服(2F639 XXL码)</p><p class="guess_price"><span class="yuan">¥</span>32.90</p></a>
+        </li>
+        <li  ><a rel="nofollow" target="_blank" title="戴尔DELL 成就3670-R14N8S 商用台式电脑(i5/8G/1T定制 含27英寸SE2717H显示器)" href=""><img width="120" height="120" alt="戴尔DELL 成就3670-R14N8S 商用台式电脑(i5/8G/1T定制 含27英寸SE2717H显示器)" src="./images/戴尔.jpg" ><p class="guess_title">戴尔DELL 成就3670-R14N8S 商用台式电脑(i5/8G/1T定制 含27英寸SE2717H显示器)</p><p class="guess_price"><span class="yuan">¥</span>4599.00</p></a>
+        </li>
+        </ul>
+        <ul >
+        <li >
+        <a rel="nofollow" target="_blank" title="脉动MI-PRO蜜桃橙子味运动饮料500ML*15" href=""><img width="120" height="120" alt="脉动MI-PRO蜜桃橙子味运动饮料500ML*15" src="./images/方太.jpg" ><p class="guess_title">脉动MI-PRO蜜桃橙子味运动饮料500ML*15</p><p class="guess_price"><span class="yuan">¥</span>74.90</p></a>
+        </li>
+        <li >
+        <a rel="nofollow" target="_blank" title="美的（Midea）MC-JK26Simple101 电饼铛 家用双面加热全自动迷你烙饼锅煎饼机" href=""><img width="120" height="120" alt="美的（Midea）MC-JK26Simple101 电饼铛 家用双面加热全自动迷你烙饼锅煎饼机" src="./images/清风.jpg" ><p class="guess_title">美的（Midea）MC-JK26Simple101 电饼铛 家用双面加热全自动迷你烙饼锅煎饼机</p><p class="guess_price"><span class="yuan">¥</span>99.00</p></a>
+        </li>
+        <li >
+        <a rel="nofollow" target="_blank" title="阿道夫滋润修护洗发水800ml+沐浴液800ml 滋润头皮修复发质洗发沐浴2瓶装(滋润修护洗发水+沐浴液800ml)" href=""><img width="120" height="120" alt="阿道夫滋润修护洗发水800ml+沐浴液800ml 滋润头皮修复发质洗发沐浴2瓶装(滋润修护洗发水+沐浴液800ml)" src="./images/电蚊香液.jpg" ><p class="guess_title">阿道夫滋润修护洗发水800ml+沐浴液800ml 滋润头皮修复发质洗发沐浴2瓶装(滋润修护洗发水+沐浴液800ml)</p><p class="guess_price"><span class="yuan">¥</span>82.90</p></a>
+        </li>
+        <li >
+        <a rel="nofollow" target="_blank" title="美的（Midea）DE12G13豆浆机 无网旋磨 多功能菜单 保温防烫 多重防护 1.2L小容量" href=""><img width="120" height="120" alt="美的（Midea）DE12G13豆浆机 无网旋磨 多功能菜单 保温防烫 多重防护 1.2L小容量" src="./images/美的双灶.jpg" ><p class="guess_title">美的（Midea）DE12G13豆浆机 无网旋磨 多功能菜单 保温防烫 多重防护 1.2L小容量</p><p class="guess_price"><span class="yuan">¥</span>179.00</p></a>
+        </li>
+        <li ><a rel="nofollow" target="_blank" title="欧莱雅复颜洁面乳125ml" href=""><img width="120" height="120" alt="欧莱雅复颜洁面乳125ml" src="./images/资生堂.jpg" ><p class="guess_title">欧莱雅复颜洁面乳125ml</p><p class="guess_price"><span class="yuan">¥</span>140.00</p></a>
+        </li>
+        <li >
+        <a rel="nofollow" target="_blank" title="苹果iphone8plus手机壳 苹果8plus保护套 iphone8 plus 挂绳卡通软套防摔全包彩绘浮雕指环支架壳(图20)" href="//"><img width="120" height="120" alt="苹果iphone8plus手机壳 苹果8plus保护套 iphone8 plus 挂绳卡通软套防摔全包彩绘浮雕指环支架壳(图20)" src="./images/美的热水器.jpg" ><p class="guess_title">苹果iphone8plus手机壳 苹果8plus保护套 iphone8 plus 挂绳卡通软套防摔全包彩绘浮雕指环支架壳(图20)</p><p class="guess_price"><span class="yuan">¥</span>39.00</p></a>
+        </li>
+        </ul>
+        <ul >
+        <li  >
+        <a rel="nofollow" target="_blank" title="欧莱雅男士劲能舒润液体洁面皂150ml" href=""><img width="120" height="120" alt="欧莱雅男士劲能舒润液体洁面皂150ml" src="./images/苏泊尔.jpg" ><p class="guess_title">欧莱雅男士劲能舒润液体洁面皂150ml</p><p class="guess_price"><span class="yuan">¥</span>49.00</p></a>
+        </li>
+        <li  >
+        <a rel="nofollow" target="_blank" title="云米（VIOMI） 不锈钢真空保温杯 便携水杯 300ml容量316随手杯 金色云米（VIOMI） 不锈钢真空保温杯" href=""><img width="120" height="120" alt="云米（VIOMI） 不锈钢真空保温杯 便携水杯 300ml容量316随手杯 金色云米（VIOMI） 不锈钢真空保温杯" src="./images/领派.jpg" ><p class="guess_title">云米（VIOMI） 不锈钢真空保温杯 便携水杯 300ml容量316随手杯 金色云米（VIOMI） 不锈钢真空保温杯</p><p class="guess_price"><span class="yuan">¥</span>59.00</p></a>
+        </li>
+        <li  >
+        <a rel="nofollow" target="_blank" title="【国美自营】惠氏S-26旗舰版金装健儿乐较大婴儿配方奶粉 2段 (6-12月龄适用)1200克（新老包装随机发货）" href=""><img width="120" height="120" alt="【国美自营】惠氏S-26旗舰版金装健儿乐较大婴儿配方奶粉 2段 (6-12月龄适用)1200克（新老包装随机发货）" src="./images/电水壶.jpg" ><p class="guess_title">【国美自营】惠氏S-26旗舰版金装健儿乐较大婴儿配方奶粉 2段 (6-12月龄适用)1200克（新老包装随机发货）</p><p class="guess_price"><span class="yuan">¥</span>201.00</p></a>
+        </li>
+        <li >
+        <a rel="nofollow" target="_blank" title="飞利浦（PHILIPS）吹风机BHC199 迪士尼儿童电吹风800W超低电磁场辐射" href=""><img width="120" height="120" alt="飞利浦（PHILIPS）吹风机BHC199 迪士尼儿童电吹风800W超低电磁场辐射" src="./images/石榴.jpg" ><p class="guess_title">飞利浦（PHILIPS）吹风机BHC199 迪士尼儿童电吹风800W超低电磁场辐射</p><p class="guess_price"><span class="yuan">¥</span>239.00</p></a>
+        </li>
+        <li >
+        <a rel="nofollow" target="_blank" title="戴尔DELL 蜘蛛侠 14/15.6英寸通用笔记本电脑双肩背包" href=""><img width="120" height="120" alt="戴尔DELL 蜘蛛侠 14/15.6英寸通用笔记本电脑双肩背包" src="./images/索尼耳机.jpg" ><p class="guess_title">戴尔DELL 蜘蛛侠 14/15.6英寸通用笔记本电脑双肩背包</p><p class="guess_price"><span class="yuan">¥</span>49.00</p></a>
+        </li>
+        <li >
+        <a rel="nofollow" target="_blank" title="苏泊尔（SUPOR)压力锅YW22M1巧易旋304不锈钢高压锅6L电磁炉明火通用" href=""><img width="120" height="120" alt="苏泊尔（SUPOR)压力锅YW22M1巧易旋304不锈钢高压锅6L电磁炉明火通用" src="./images/苏泊尔.jpg" ><p class="guess_title">苏泊尔（SUPOR)压力锅YW22M1巧易旋304不锈钢高压锅6L电磁炉明火通用</p><p class="guess_price"><span class="yuan">¥</span>389.00</p></a>
+        </li>
+        </ul>
+        </div>
+    </div>
+</div>
+<!-- 猜你喜欢部分over -->
+<div class="pluspc_template" style="height: auto; overflow: hidden;" >
+<div class="pluspc-topPic-box" >
+    <div class="topPic-box-cont clearfix ">
+        <div class="cont-hotTop fl"  id="gomehottopic">
+            <div class="hotTop-title clearfix">
+                <h3 class="fl">热门话题</h3>
+                <p class="fr ">
+                    <a class="hotTop-publish" href=""  target="_blank">发布话题&gt;</a>
+                </p>
+            </div>
+            <ul class="clearfix">
+                <li>
+                    <div class="hotTop-img" >
+                        <a href=""  class="hotTop-imgBig" target="_blank"><img class="img-pic" src="./images/三星note.jpg"></a>
+                        <a class="img-name" href="" target="_blank">
+                            <span class="img-name-bg"></span>
+                            <img src="./images/手机的故事.png"><em class="img-tag" style=" ">一部手机一个故事</em>
+                        </a>
+                    </div>
+                    <div class="hotTop-matter">
+                        <div class="matter-title">
+                            <a href="" >三星Note9开售 购机有惊喜</a>
+                        </div>
+                        <div class="matter-info">
+                            <a href=""  target="_blank">三星Note 9 国行版现已火热开售，购买用户还可参与加3元换购国美价299元的蓝牙网络音响活动，更多惊喜等你来，赶快来参与吧！</a>
+                        </div>
+                        <div class="matterData clearfix">
+                            <a class="matterData-assist" href="javascript:;">22</a>
+                            <a class="matterData-discuss" href="javascript:;">0</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hotTop-img"  >
+                        <a href=""  class="hotTop-imgBig" target="_blank"><img class="img-pic" src="./images/开学礼包.jpg"></a>
+                        <a class="img-name"   href="" target="_blank">
+                            <span class="img-name-bg"></span>
+                            <img src="./images/福利社.jpg"><em class="img-tag" style=" ">GOME福利社</em>
+                        </a>
+                    </div>
+                    <div class="hotTop-matter">
+                        <div class="matter-title">
+                            <a href="" >说说想回到的学生阶段赢开学礼包</a>
+                        </div>
+                        <div class="matter-info">
+                            <a href=""  target="_blank">八月份的尾巴，天气仍旧闷热中。熊孩子们上天下地已玩疯，还没来得及跟暑假告别~  刚刚经历了高考难关的童鞋们，已经开始期待全新的大学生活~</a>
+                        </div>
+                        <div class="matterData clearfix">
+                            <a class="matterData-assist" href="javascript:;">142</a>
+                            <a class="matterData-discuss" href="javascript:;">195</a>
+                        </div>
+                    </div>
+                </li><li>
+                    <div class="hotTop-img" >
+                        <a href="" class="hotTop-imgBig" target="_blank"><img class="img-pic" src="./images/鲜果儿.jpg"></a>
+                        <a class="img-name"  href="" target="_blank">
+                            <span class="img-name-bg"></span>
+                            <img src="./images/吃出奇迹.jpg"><em class="img-tag" style="  overflow: hidden;">吃出奇迹</em>
+                        </a>
+                    </div>
+                    <div class="hotTop-matter">
+                        <div class="matter-title">
+                            <a href=""  target="_blank">想减肥？早餐喝一杯鲜果汁儿</a>
+                        </div>
+                        <div class="matter-info">
+                            <a href=""  target="_blank">喝果汁可以均衡营养，减脂瘦身，女生喝了还能美容养颜。但瓶装果汁绝不等同于鲜果汁，它们能给身体提供的养分是不一样的。</a>
+                        </div>
+                        <div class="matterData clearfix">
+                            <a class="matterData-assist" href="javascript:;">23</a>
+                            <a class="matterData-discuss" href="javascript:;">0</a>
+                        </div>
+                    </div>
+                </li>            
+               </ul>
+        </div>
+        <div class="cont-interest fr"  id="gomeinterestgroup">
+            <div class="interest-title clearfix">
+                <h3 class="fl">兴趣圈子</h3>
+                <p class="fr ">
+                    <a class="interest-more" href="" target="_blank">更多&gt;</a>
+                </p>
+            </div>
+
+            <div class="interest-cont">
+                <div class="interest-wrap" >
+                    <div>
+                        <a class="list-img" href="" target="_blank">
+                            <img src="./images/美妆.jpg" width="100%">
+                        </a>
+                    </div>
+                    <div class="list-txt-t clearfix">
+                            <span class="txt-title">
+                                <span class="tag">美妆</span>
+                                <a target="_blank" href="" >美妆</a>
+                            </span>
+                        <span class="txt-num">
+                                成员<span class="list-txt-num">1094</span>
+                                话题<span class="list-txt-num">378</span>
+                            </span>
+                    </div>                    <p class="list-topic">
+                            <a href=""  target="_blank">
+                                ［话题］                                                                女人一生必！败！大牌口红代表色，你收集全了么？                            </a>
+                        </p><p class="list-topic">
+                            <a href=""  target="_blank">
+                                ［话题］                                                                2017年秋冬最美的奶茶色口红，你还没有集齐吗？                            </a>
+                        </p><p class="list-topic">
+                            <a href=""  target="_blank">
+                                ［话题］                                                                想眉毛画得又快又完美？这些技巧你需要知道！                            </a>
+                        </p><p class="list-topic">
+                            <a href=""  target="_blank">
+                                ［话题］                                                                锁骨发型自带的温柔气韵、妩媚性感！                            </a>
+                        </p>                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+<!-- 热门话题over -->
+<!-- <div style="height: 1000px;">
+	
+</div> -->
+<div id="floorNavContainer">
+	<div class="layout main_1 pub_floor">
+		<div class="public_foor_hd">
+			<span class="title fl">1F手机通讯</span>
+			<ul class="tab fr" id="floor_1_hd">
+				<!-- current -->
+	    		<li class="active"><a href="javascript:void(0)">精选热卖</a></li>
+	            <li><a href="javascript:void(0);">时尚新品</a></li>
+	   		 </ul>
+		</div>
+
+		<!--   头部分^ -->
+		<div class="container">
+			<div class="container_L fl">
+				<a href="##">
+					<img src="./images/floor_left.jpg" class="ml10">
+				</a>
+				<p class="container_L_C"><a href="">手机/充值/淘实惠/领券</a></p>
+				<div class="container_L_ft">
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+				</div>
+			</div>
+			<div class="container_R fl" id="floor_1_con">
+				<span class="next"></span>
+				<!-- 第一个切换的内容  -->
+				<div class="container_R_tab" types="itemFloor" style="display: block;">
+					<div class="container_R_tab_L fl" id="floor_focus1">
+						<ul class="hdp_focus_con">
+							<li class="active">
+								<img src="./images/floor_hdp_1.jpg" class="hdp_1">
+								<img src="./images/floor_hdp_ft.jpg" class="hdp_2">
+							</li>
+							<li>
+								<img src="./images/floor_hdp_2.jpg" class="hdp_1">
+								<img src="./images/floor_hdp_ft.jpg" class="hdp_2">
+							</li>
+							<li>
+								<img src="./images/floor_hdp_3.jpg" class="hdp_1">
+								<img src="./images/floor_hdp_ft.jpg" class="hdp_2">
+							</li>
+						</ul>
+						<span class="btn btn_prev"></span>
+						<span class="btn btn_next"></span>
+						<p class="aDot">
+							<em indexnnum="1" class="active">1</em><em indexnnum="2">2</em><em indexnnum="3">3</em>
+						</p>
+					</div>
+					<!--  幻灯片  -->
+					<div class="container_R_tab_R fl">
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+						<p>
+							<a href="">
+								<img src="./images/floor_img_2.jpg">
+							</a>
+						</p>						
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+						<p>
+							<a href="">
+								<img src="./images/floor_img_2.jpg">
+							</a>
+						</p>						
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+					</div>
+				</div>
+				<!-- 第二个切换的内容 -->
+				<div class="container_R_tab" types="itemFloor">
+					<ul class="floor_item_container">
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 楼层内容部分^ -->
+	</div>
+	<!--  第1个楼层手机通讯over  -->		
+	<div class="layout main_2 pub_floor">
+		<div class="public_foor_hd">
+			<span class="title fl">2F电脑数码</span>
+			<ul class="tab fr" id="floor_2_hd">
+				<!-- current -->
+	    		<li class="active"><a href="javascript:void(0)">精选热卖</a></li>
+	            <li><a href="javascript:void(0);">时尚新品</a></li>
+	   		 </ul>
+		</div>
+
+		<!--   头部分^ -->
+		<div class="container">
+			<div class="container_L fl">
+				<a href="##">
+					<img src="https://gfs12.gomein.net.cn/T1g6W_B5Dv1RCvBVdK.png" class="ml10">
+				</a>
+				<p class="container_L_C"><a href="">手机/充值/淘实惠/领券</a></p>
+				<div class="container_L_ft">
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+				</div>
+			</div>
+			<div class="container_R fl" id="floor_2_con">
+				<span class="next"></span>
+				<!-- 第一个切换的内容  -->
+				<div class="container_R_tab" types="itemFloor" style="display: block;">
+					<div class="container_R_tab_L fl" id="floor_focus2">
+						<ul class="hdp_focus_con">
+							<li class="active">
+								<img src="./images/floor_hdp_1.jpg" class="hdp_1">
+								<img src="./images/floor_hdp_ft.jpg" class="hdp_2">
+							</li>
+							<li>
+								<img src="./images/floor_hdp_2.jpg" class="hdp_1">
+								<img src="./images/floor_hdp_ft.jpg" class="hdp_2">
+							</li>
+							<li>
+								<img src="./images/floor_hdp_3.jpg" class="hdp_1">
+								<img src="./images/floor_hdp_ft.jpg" class="hdp_2">
+							</li>
+						</ul>
+						<span class="btn btn_prev"></span>
+						<span class="btn btn_next"></span>
+						<p class="aDot">
+							<em>1</em>
+							<em>2</em>
+							<em>3</em>
+						</p>
+					</div>
+					<div class="container_R_tab_R fl">
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+						<p>
+							<a href="">
+								<img src="./images/floor_img_2.jpg">
+							</a>
+						</p>						
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+						<p>
+							<a href="">
+								<img src="./images/floor_img_2.jpg">
+							</a>
+						</p>						
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+					</div>
+				</div>
+				<!-- 第二个切换的内容 -->
+				<div class="container_R_tab" types="itemFloor">
+					<ul class="floor_item_container">
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<!-- 楼层内容部分^ -->
+	</div>
+	<!--  第2个楼层电脑数码over  -->
+
+	<div class="layout main_3 pub_floor">
+		<div class="public_foor_hd">
+			<span class="title fl">3F家用电器</span>
+			<ul class="tab fr" id="floor_3_hd">
+				<!-- current -->
+	    		<li class="active"><a href="javascript:void(0)">精选热卖</a></li>
+	            <li><a href="javascript:void(0);">时尚新品</a></li>
+	   		 </ul>
+		</div>
+
+		<!--   头部分^ -->
+		<div class="container">
+			<div class="container_L fl">
+				<a href="##">
+					<img src="https://gfs12.gomein.net.cn/T1M1EjBXhv1RCvBVdK.png" class="ml10">
+				</a>
+				<p class="container_L_C"><a href="">手机/充值/淘实惠/领券</a></p>
+				<div class="container_L_ft">
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+				</div>
+			</div>
+			<div class="container_R fl" id="floor_3_con">
+				<span class="next"></span>
+				<!-- 第一个切换的内容  -->
+				<div class="container_R_tab" types="itemFloor" style="display: block;">
+					<div class="container_R_tab_L fl" id="floor_focus3">
+						<ul class="hdp_focus_con">
+							<li class="active">
+								<img src="./images/floor_hdp_1.jpg" class="hdp_1">
+								<img src="./images/floor_hdp_ft.jpg" class="hdp_2">
+							</li>
+							<li>
+								<img src="./images/floor_hdp_2.jpg" class="hdp_1">
+								<img src="./images/floor_hdp_ft.jpg" class="hdp_2">
+							</li>
+							<li>
+								<img src="./images/floor_hdp_3.jpg" class="hdp_1">
+								<img src="./images/floor_hdp_ft.jpg" class="hdp_2">
+							</li>
+						</ul>
+						<span class="btn btn_prev"></span>
+						<span class="btn btn_next"></span>
+						<p class="aDot">
+							<em>1</em>
+							<em>2</em>
+							<em>3</em>
+						</p>
+					</div>
+					<div class="container_R_tab_R fl">
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+						<p>
+							<a href="">
+								<img src="./images/floor_img_2.jpg">
+							</a>
+						</p>						
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+						<p>
+							<a href="">
+								<img src="./images/floor_img_2.jpg">
+							</a>
+						</p>						
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+					</div>
+				</div>
+				<!-- 第二个切换的内容 -->
+				<div class="container_R_tab" types="itemFloor">
+					<ul class="floor_item_container">
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<!-- 楼层内容部分^ -->
+	</div>
+	<!--  第3个楼层家用电器over  -->
+
+	<div class="layout main_4 pub_floor">
+		<div class="public_foor_hd">
+			<span class="title fl">4F厨房卫浴</span>
+			<ul class="tab fr" id="floor_4_hd">
+				<!-- current -->
+	    		<li class="active"><a href="javascript:void(0)">精选热卖</a></li>
+	            <li><a href="javascript:void(0);">时尚新品</a></li>
+	   		 </ul>
+		</div>
+
+		<!--   头部分^ -->
+		<div class="container">
+			<div class="container_L fl">
+				<a href="##">
+					<img src="https://gfs13.gomein.net.cn/T1tQJQBvxT1RCvBVdK.jpg" class="ml10">
+				</a>
+				<p class="container_L_C"><a href="">手机/充值/淘实惠/领券</a></p>
+				<div class="container_L_ft">
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+				</div>
+			</div>
+			<div class="container_R fl" id="floor_4_con">
+				<span class="next"></span>
+				<!-- 第一个切换的内容  -->
+				<div class="container_R_tab" types="itemFloor" style="display: block;">
+					<div class="container_R_tab_L fl" id="floor_focus4">
+						<ul class="hdp_focus_con">
+							<li class="active">
+								<img src="./images/floor_hdp_1.jpg" class="hdp_1">
+								<img src="./images/floor_hdp_ft.jpg" class="hdp_2">
+							</li>
+							<li>
+								<img src="./images/floor_hdp_2.jpg" class="hdp_1">
+								<img src="./images/floor_hdp_ft.jpg" class="hdp_2">
+							</li>
+							<li>
+								<img src="./images/floor_hdp_3.jpg" class="hdp_1">
+								<img src="./images/floor_hdp_ft.jpg" class="hdp_2">
+							</li>
+						</ul>
+						<span class="btn btn_prev"></span>
+						<span class="btn btn_next"></span>
+						<p class="aDot">
+							<em>1</em>
+							<em>2</em>
+							<em>3</em>
+						</p>
+					</div>
+					<div class="container_R_tab_R fl">
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+						<p>
+							<a href="">
+								<img src="./images/floor_img_2.jpg">
+							</a>
+						</p>						
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+						<p>
+							<a href="">
+								<img src="./images/floor_img_2.jpg">
+							</a>
+						</p>						
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+					</div>
+				</div>
+				<!-- 第二个切换的内容 -->
+				<div class="container_R_tab" types="itemFloor">
+					<ul class="floor_item_container">
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<!-- 楼层内容部分^ -->
+	</div>
+	<!--  第4个楼层厨房卫浴over  -->
+
+	<div class="layout main_5 pub_floor">
+		<div class="public_foor_hd">
+			<span class="title fl">5F厨房卫浴</span>
+			<ul class="tab fr" id="floor_5_hd">
+				<!-- current -->
+	    		<li class="active"><a href="javascript:void(0)">精选热卖</a></li>
+	            <li><a href="javascript:void(0);">时尚新品</a></li>
+	   		 </ul>
+		</div>
+
+		<!--   头部分^ -->
+		<div class="container">
+			<div class="container_L fl">
+				<a href="##">
+					<img src="https://gfs11.gomein.net.cn/T1QTJgBvZv1RCvBVdK.jpg" class="ml10">
+				</a>
+				<p class="container_L_C"><a href="">手机/充值/淘实惠/领券</a></p>
+				<div class="container_L_ft">
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+				</div>
+			</div>
+			<div class="container_R fl" id="floor_5_con">
+				<span class="next"></span>
+				<!-- 第一个切换的内容  -->
+				<div class="container_R_tab" types="itemFloor" style="display: block;">
+					<div class="container_R_tab_L fl" id="floor_focus5">
+						<ul class="hdp_focus_con">
+							<li class="active">
+								<img src="./images/floor_hdp_1.jpg" class="hdp_1">
+								<img src="./images/floor_hdp_ft.jpg" class="hdp_2">
+							</li>
+							<li>
+								<img src="./images/floor_hdp_2.jpg" class="hdp_1">
+								<img src="./images/floor_hdp_ft.jpg" class="hdp_2">
+							</li>
+							<li>
+								<img src="./images/floor_hdp_3.jpg" class="hdp_1">
+								<img src="./images/floor_hdp_ft.jpg" class="hdp_2">
+							</li>
+						</ul>
+						<span class="btn btn_prev"></span>
+						<span class="btn btn_next"></span>
+						<p class="aDot">
+							<em>1</em>
+							<em>2</em>
+							<em>3</em>
+						</p>
+					</div>
+					<div class="container_R_tab_R fl">
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+						<p>
+							<a href="">
+								<img src="./images/floor_img_2.jpg">
+							</a>
+						</p>						
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+						<p>
+							<a href="">
+								<img src="./images/floor_img_2.jpg">
+							</a>
+						</p>						
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+					</div>
+				</div>
+				<!-- 第二个切换的内容 -->
+				<div class="container_R_tab" types="itemFloor">
+					<ul class="floor_item_container">
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<!-- 楼层内容部分^ -->
+	</div>
+	<!--  第5个楼层国美超市over  -->
+
+	<div class="layout main_6 pub_floor">
+		<div class="public_foor_hd">
+			<span class="title fl">6F服饰鞋包</span>
+			<ul class="tab fr" id="floor_6_hd">
+				<!-- current -->
+	    		<li class="active"><a href="javascript:void(0)">精选热卖</a></li>
+	            <li><a href="javascript:void(0);">时尚新品</a></li>
+	   		 </ul>
+		</div>
+
+		<!--   头部分^ -->
+		<div class="container">
+			<div class="container_L fl">
+				<a href="##">
+					<img src="https://gfs13.gomein.net.cn/T1yvVgBbDT1RCvBVdK.jpg" class="ml10">
+				</a>
+				<p class="container_L_C"><a href="">手机/充值/淘实惠/领券</a></p>
+				<div class="container_L_ft">
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+
+					<p><a href="" class="L_ft_1">荣耀手机</a><a href="" class="L_ft_2">潮3C</a><a href="" class="L_ft_3">国美租租</a></p>
+				</div>
+			</div>
+			<div class="container_R fl" id="floor_6_con">
+				<span class="next"></span>
+				<!-- 第一个切换的内容  -->
+				<div class="container_R_tab" types="itemFloor" style="display: block;">
+					<div class="container_R_tab_L fl" id="floor_focus6">
+						<ul class="hdp_focus_con">
+							<li class="active">
+								<img src="./images/floor_hdp_1.jpg" class="hdp_1">
+								<img src="./images/floor_hdp_ft.jpg" class="hdp_2">
+							</li>
+							<li>
+								<img src="./images/floor_hdp_2.jpg" class="hdp_1">
+								<img src="./images/floor_hdp_ft.jpg" class="hdp_2">
+							</li>
+							<li>
+								<img src="./images/floor_hdp_3.jpg" class="hdp_1">
+								<img src="./images/floor_hdp_ft.jpg" class="hdp_2">
+							</li>
+						</ul>
+						<span class="btn btn_prev"></span>
+						<span class="btn btn_next"></span>
+						<p class="aDot">
+							<em>1</em>
+							<em>2</em>
+							<em>3</em>
+						</p>
+					</div>
+					<div class="container_R_tab_R fl">
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+						<p>
+							<a href="">
+								<img src="./images/floor_img_2.jpg">
+							</a>
+						</p>						
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+						<p>
+							<a href="">
+								<img src="./images/floor_img_2.jpg">
+							</a>
+						</p>						
+						<p>
+							<a href="">
+								<img src="./images/floor_img_1.jpg">
+							</a>
+						</p>
+					</div>
+				</div>
+				<!-- 第二个切换的内容 -->
+				<div class="container_R_tab" types="itemFloor">
+					<ul class="floor_item_container">
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_2.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+						<li>
+							<a href="##" target="_blank">  
+								<img class="lazyloading" src="./images/floor_img2_1.jpg"  width="130" height="130"> 
+							 	<p class="p_name">华为 nova3 全网通 亮黑</p>  
+							 	<p class="p_price"><span>¥</span>2799.00</p>  
+						 	</a>  
+						</li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<!-- 楼层内容部分^ -->
+	</div>
+	<!--  第6个楼层服饰鞋包over  -->
+</div>
+
+
+
+<div id="elevator" class="elevator">
+   <div class="fl_nav">
+    楼层导航
+   </div>
+   <ul>
+    <li index="0" class="handler"><b class="etitle" href="javascript:;"></b><a href="javascript:;"><span>1F</span><p>手机通讯</p></a></li>
+    <li index="1" class="handler"><b class="etitle" href="javascript:;"></b><a href="javascript:;"><span>2F</span><p>电脑数码</p></a></li>
+    <li index="2" class="handler"><b class="etitle" href="javascript:;"></b><a href="javascript:;"><span>3F</span><p>家用电器</p></a></li>
+    <li index="3" class="handler"><b class="etitle" href="javascript:;"></b><a href="javascript:;"><span>4F</span><p>厨房卫浴</p></a></li>
+    <li index="4" class="handler"><b class="etitle" href="javascript:;"></b><a href="javascript:;"><span>5F</span><p>国美超市</p></a></li>
+    <li index="5" class="handler"><b class="etitle" href="javascript:;"></b><a href="javascript:;"><span>6F</span><p>服饰鞋包</p></a></li>
+   </ul>
+   <ul class="fl_goto">
+    <li class="flTop" id="goTop"><a href="javascript:;" class=""></a></li>
+    <li class="fl_bottom" id="goBottom"><a href="javascript:;" class=""></a><span></span></li>
+   </ul>
+  </div>
+
+  <!-- 楼层部分over -->
+  <div id="gome-bar">
+    <div class="gome-aside" style="background: rgb(92, 92, 92);">
+        <ul>
+            <li id="gome-aside-cart" class="lang">
+                <b></b><a href="javascript:void(0)" class="lang"><i class="caricon"></i><b class="car_num car_num_0" style="background: rgb(165, 165, 165);"><s>0</s><span class="point"></span></b><span class="text">购物车</span></a>
+            </li>
+            
+            <li id="gome-aside-app" class="hover">
+                <b></b><a data-code="1000043134" href="" target="_blank"><i class="hover"></i></a>
+                <div style="transform: translate(0px, 0px); transition: all 0.2s ease-out;"></div>
+            </li>
+            <li id="gome-aside-survey" class="">
+                <b></b><a rel="nofollow"  href="" target="_blank"><i class=""></i></a>
+                <div style="transform: translate(110%, 0px); transition: all 0.2s ease-out;"><p><a rel="nofollow"  href="" target="_blank">首页反馈</a></p></div>
+            </li>
+            <li id="gome-aside-service" class="">
+                <b></b><a class="live800-service"><i class=""></i></a>
+                <div style="transform: translate(110%, 0px); transition: all 0.2s ease-out;"><p><a class="live800-service">在线客服</a></p></div>
+            </li>
+            <li id="gome-aside-backtop" style="visibility: visible;" class="">
+                <b></b><a href="javascript:void(0)"><i class=""></i></a>
+                <div style="transform: translate(110%, 0px); transition: all 0.2s ease-out;"><p><a>返回顶部</a></p></div>
+            </li>
+        </ul>
+    </div>
+    <!-- gome-aside -->
+        <div id="gome-aside-app-code" class="ie" style="transform: translate(0px, 0px); transition: all 0.2s ease-out;">
+        <a  href="" target="_blank">
+                <img src="./images/侧边二维码.jpg">
+        <strong>moren</strong></a>
+        </div>
+    <!-- gome-aside-app-code -->
+    <div id="gome-bar-border" style="display: block;">
+        <ul id="gome-bar-border-tab" style="display: block; top: 62px;">
+            <li class="gome-bar-btn-member" ><b></b><i class="membericon"></i><a class="gome-bar-btn-tip" rel="nofollow" href="javascript:void(0);">国美会员</a></li>
+            <li class="gome-bar-btn-cart"  id="gome-bar-btn-cart"><b class="car_arrow"></b><i class="caricon"></i><b class="car_num car_num_0" style="background: rgb(165, 165, 165);"><s>0</s><span class="point"></span></b><span class="text">购物车</span></li>
+            
+            <li class="gome-bar-btn-favorites"  id="gome-bar-btn-favorites"><b></b><i class="favorites-icon"></i><a class="gome-bar-btn-tip" href="javascript:void(0);">我的收藏</a></li>
+        </ul>
+    </div>
+    <!-- gome-bar-border -->
+    <div id="gome-bar-box">
+        <div id="gome-bar-member" class="gome-bar-box-wrap">
+            <h3><span class="gome-bar-close"></span></h3>
+            <div id="member-body" class="gome-bar-box-body">
+                <div class="gome-bar-box-loading" style="top: 138px;">
+                    <img src="./images/grey.gif">
+                </div>
+            </div>
+        </div>
+        <div id="gome-bar-cart" class="gome-bar-box-wrap">
+            <h3><span class="gome-bar-close"></span></h3>
+            <div id="cart-body" class="gome-bar-box-body">
+                <div class="gome-bar-box-loading" style="top: 138px;">
+                    <img src="./images/grey.gif" >
+                </div>
+            </div>
+        </div>
+        
+        <div id="gome-bar-favorites" class="gome-bar-box-wrap">
+            <h3><span class="gome-bar-close"></span><span class="gome-bar-title">我的收藏</span></h3>
+            <ul class="favorites-tab">
+                <li class="tab-item tab-item-goods selected">商品</li>
+                <li class="tab-item tab-item-shop">店铺</li>
+                <li class="tab-item tab-item-brand">品牌</li>
+            </ul>
+            <div id="favorites-body" class="gome-bar-box-body">
+                <div class="gome-bar-box-loading" style="top: 138px;">
+                    <img src="./images/grey.gif">
+                </div>
+              
+                <div id="favorites-main-scrool" class="favorites-main">
+                    <div class="main-item main-item-goods">
+                    </div>
+                    <div class="main-item main-item-shop">
+                    </div>
+                    <div class="main-item main-item-brand">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- gome-bar-coupon -->
+    </div>
+    <!-- gome-bar-box -->
+</div>
+
+<!-- 底部广告 -->
+	<div class="gome_bottom_ad_100">
+		<div class="gome_bottom_ad layout">
+			<ul>
+				<li><a href=""><img src="./images/bad1.jpg" alt="">
+					<h3><span>话费</span>充值频道</h3>
+					<p><a href="">移动</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="">联通</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="">电信</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="">极信</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="">手机</a></p>
+					<div>
+						<p><a href="">充话费、充流量，天天低价</a></p>
+						<p><a href="">买手机，正品行货，购物无忧</a></p>
+					</div>
+				</a></li>
+				<li><a href=""><img src="./images/bad2.jpg" alt=""><img src="./images/bad3.jpg" alt="">
+					<h3>充流量</h3>
+					<p>移动/联通/电信</p>
+					<h3>游戏充值</h3>
+					<p>Q币、点券9折起</p>
+				</a></li>
+				<li><a href=""><img src="./images/bad4.jpg" alt="">
+					<h3><span>理财</span>金融频道</h3>
+					<p><a href="">美盈宝</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="">定期</a></p>
+					<div>
+						<p><a href="">一元投 美盈宝活期理财</a></p>
+						
+					</div>
+				</a></li>
+				<li><a href=""><img src="./images/bad5.jpg" alt=""><img src="./images/bad6.jpg" alt="">
+					<p>个人风险测试</p>
+					<p>转让理财 定期变活期</p>	
+				</a></li>
+				<li><a href=""><img src="./images/bad7.jpg" alt=""><img src="./images/bad8.jpg" alt="">
+					<p>市场有风险 投资需谨慎</p>
+					<p>美盈宝零存活取 日日复利</p>
+				</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+	<!-- 底部广告 -->
+	<!-- 热销榜 -->
+	<div class="gome_hotbuy layout">
+		<div class="gome_hotbuy_l">
+			<h3>热销榜<span>HOT</span> <a>更多好货></a></h3>
+			<ul>
+				<li><a href=""><img src="./images/rm1.jpg" alt="">
+				<p>伊莱克斯(Electrolux) 1P 定频 冷</p>
+				<p>¥1499.00</p><span></span>
+				</a></li>
+				<li><a href="">
+					<ul>
+						<li><img src="./images/rm2.jpg" alt="">
+							<h6>Apple iPhone X 64G 银色 全网通4G手机</h6>
+							<p>¥7188.00</p><b>2</b>
+						</li>
+						<li><img src="./images/rm4.jpg" alt="">
+							<h6>Apple iPhone X 64G 银色 全网通4G手机</h6>
+							<p>¥7188.00</p><b>4</b>
+						</li>
+					</ul>
+				</a></li>
+				<li><a href="">
+					<ul>
+						<li><img src="./images/rm3.jpg" alt="">
+							<h6>Apple iPhone X 64G 银色 全网通4G手机</h6>
+							<p>¥7188.00</p><b>3</b>
+						</li>
+						<li><img src="./images/rm5.jpg" alt="">
+							<h6>Apple iPhone X 64G 银色 全网通4G手机</h6>
+							<p>¥7188.00</p><b>5</b>
+						</li>
+
+					</ul>
+				</a></li>
+
+			</ul>
+		</div>
+		
+		<div class="gome_hotbuy_r">
+			<h3>家电服务<span>SERVICE</span> <a>家电清洗 / 手机维修</a></h3>
+			<ul>
+				<li>
+					<a href="">
+						<div><img src="./images/service1.png" alt=""></div>
+						<h5>油烟机免拆清洗</h5>
+						<span>¥139.00 <em>起</em></span>
+						<p>随时预约，快速响应<br>上门服务，安全更便捷</p>
+						<b>上门服务</b>
+						<b>深度清洁</b>
+						<b>杀菌率高</b>
+
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div><img src="./images/service2.png" alt=""></div>
+						<h5>iphone6</h5>
+						<span>¥89.00 <em>起</em></span>
+						<p>随时预约，快速响应<br>上门服务，安全更便捷</p>
+						<b>上门服务</b>
+						<b>原厂品质</b>
+						<b>安全高效</b>
+
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+
+	</div>
+	<!-- 热销榜 -->
+	<div class="gome_youshi layout">
+		<ul>
+			<li>
+				<i></i><span>品质</span><b>正品行货 购物无忧</b>
+			</li>
+			<li>
+				<i></i><span>低价</span><b>普惠实价 帮你省钱</b>
+			</li>
+			<li>
+				<i></i><span>速达</span><b>专业速达 按时按需</b>
+			</li>
+		</ul>
+	</div>
+
+
+<!-- /////////////////////////////////////////////////////////////////////////// -->
+	
+	<div class="gome_help layout">
+		<ul>
+			<li>
+				<dl>
+					<dt>物流配送</dt>
+					<dd><a href="">配送查询</a></dd>
+					<dd><a href="">配送服务</a></dd>
+					<dd><a href="">配送费用</a></dd>
+					<dd><a href="">配送时效</a></dd>
+					<dd><a href="">签收与验货</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt>支付与账户</dt>
+					<dd><a href="">货到付款</a></dd>
+					<dd><a href="">在线支付</a></dd>
+					<dd><a href="">分期付款</a></dd>
+					<dd><a href="">门店支付</a></dd>
+					<dd><a href="">发票制度</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt>售后服务</dt>
+					<dd><a href="">退换货服务</a></dd>
+					<dd><a href="">退款说明</a></dd>
+					<dd><a href="">专业维修</a></dd>
+					<dd><a href="">延保服务</a></dd>
+					<dd><a href="">家电回收</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt>会员专区</dt>
+					<dd><a href="">会员介绍</a></dd>
+					<dd><a href="">优惠券说明</a></dd>
+					<dd><a href="">美豆说明</a></dd>
+					<dd><a href="">商品评价</a></dd>
+					
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt>购物帮助</dt>
+					<dd><a href="">购物保障</a></dd>
+					<dd><a href="">购物流程</a></dd>
+					<dd><a href="">促销优惠</a></dd>
+					<dd><a href="">焦点问题</a></dd>
+					<dd><a href="">联系我们</a></dd>
+				</dl>
+			</li>
+			
+		</ul>
+	</div>
+	<!-- /////////////////////////////////////////// -->
+	<div class="gome_footer_100">
+		<div class="gome_footer layout">
+			<div class="gome_footer_up">
+				<dl>
+					<dt></dt>
+					<dd>
+						<h4>门店服务</h4>
+						<p><a href="">国美门店全国共计2000余家</a></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd>
+						<h4>用户体验</h4>
+						<p><a href="">参与用户体验改进计划 用户反馈</a></p>
+					</dd>
+				</dl>
+				<p><a href="">国美集团</a>&nbsp;&nbsp;&nbsp;<a href="">国美管家</a>&nbsp;&nbsp;&nbsp;<a href="">关于国美</a>&nbsp;&nbsp;&nbsp;<a href="">加入我们</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="">品牌大全</a>&nbsp;&nbsp;&nbsp;<a href="">商品专题</a>&nbsp;&nbsp;&nbsp;<a href="">批发大全</a>&nbsp;&nbsp;&nbsp;<a href="">热词搜索</a>&nbsp;&nbsp;&nbsp;<a href="">友情链接</a>&nbsp;&nbsp;&nbsp;<a href="">风险监测</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="">销售联盟</a>&nbsp;&nbsp;&nbsp;<a href="">商家入驻</a>&nbsp;&nbsp;&nbsp;<a href="">广告营销</a></p>
+				<h6>本公司游戏产品适合18岁以上成年人使用  违法和不良信息举报电话：021-60766055  互联网药品信息服务资格证编号（京）-经营性-2018-0025</h6>
+				<h6>国美在线电子商务有限公司  办公地址:上海市嘉定区沪宜公路3163-3199号一楼A区  客服电话:4008113333  经营证照</h6>
+				<h6>©2000-2018  国美在线电子商务有限公司版权所有  京公安网备11010502027062  沪ICP备11009419号  沪B2-20120004号</h6>	
+				<div class="gome_footer_up_r">
+					<span><i></i><br>公众号</span>
+					<!-- <img src="./images/wx.jpg" alt=""> -->
+					
+					<span><i></i><br>手机热点</span>
+					<span><i><img src="./images/90.jpg" alt=""></i><br>扫描下载客户端</span>
+
+				</div>		
+			</div>
+			<div class="gzh">
+				<span></span>
+			</div>
+			<div class="sjrd">
+				<span></span>
+			</div>
+			<div class="gome_footer_down">
+				<ul>
+					<li>
+						<dl>
+							<dt></dt>
+							<dd>
+								<p><a href="">经营性网站</a><br><a href="">备案信息</a></p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt></dt>
+							<dd>
+								<p><a href="">可信网站</a><br><a href="">信用评价</a></p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt></dt>
+							<dd>
+								<p><a href="">诚信网站</a></p>
+								
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt></dt>
+							<dd>
+								<p><a href="">朝阳网络</a><br><a href="">警察</a></p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt></dt>
+							<dd>
+								<p><a href="">网购大家评</a></p>
+								
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt></dt>
+							<dd>
+								
+								<p><a href="">上海市互联网违法和<br>不良信息举报中心</a></p>
+							</dd>
+						</dl>
+					</li>
+					
+
+				</ul>
+				
+			</div>
+
+		</div>
+	</div>
+
+
+<script type="text/javascript" src="./jquery/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="./js/tool.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+
+</body>
+</html>
